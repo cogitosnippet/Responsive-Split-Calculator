@@ -125,6 +125,99 @@ function calculation(tip){
   total_amount.innerHTML = `$ ${amount_final_}`; 
 }
 
+function calculation(tip){
+  let amount = parseFloat(bill.value);
+
+  let tip_value =  ((tip/100)*amount);
+  let number_of_people = parseInt(people.value);
+
+
+  let tip_final = ((Math.round(tip_value*100)/100));
+  let tip_final_amount = (Math.round((tip_final/number_of_people)*100)/100);
+  tip_amount.innerHTML = `$ ${tip_final_amount}`;
+
+
+  let amount_final =  Math.round((amount/number_of_people)*100)/100+tip_final_amount;
+
+  let amount_final_ = Math.round(amount_final * 100)/100;
+
+  total_amount.innerHTML = `$ ${amount_final_}`; 
+}
+function calculation(tip){
+  let amount = parseFloat(bill.value);
+
+  let tip_value =  ((tip/100)*amount);
+  let number_of_people = parseInt(people.value);
+
+
+  let tip_final = ((Math.round(tip_value*100)/100));
+  let tip_final_amount = (Math.round((tip_final/number_of_people)*100)/100);
+  tip_amount.innerHTML = `$ ${tip_final_amount}`;
+
+
+  let amount_final =  Math.round((amount/number_of_people)*100)/100+tip_final_amount;
+
+  let amount_final_ = Math.round(amount_final * 100)/100;
+
+  total_amount.innerHTML = `$ ${amount_final_}`; 
+}
+
+function calculation(tip){
+  let amount = parseFloat(bill.value);
+
+  let tip_value =  ((tip/100)*amount);
+  let number_of_people = parseInt(people.value);
+
+
+  let tip_final = ((Math.round(tip_value*100)/100));
+  let tip_final_amount = (Math.round((tip_final/number_of_people)*100)/100);
+  tip_amount.innerHTML = `$ ${tip_final_amount}`;
+
+
+  let amount_final =  Math.round((amount/number_of_people)*100)/100+tip_final_amount;
+
+  let amount_final_ = Math.round(amount_final * 100)/100;
+
+  total_amount.innerHTML = `$ ${amount_final_}`; 
+}
+
+function calculation(tip){
+  let amount = parseFloat(bill.value);
+
+  let tip_value =  ((tip/100)*amount);
+  let number_of_people = parseInt(people.value);
+
+
+  let tip_final = ((Math.round(tip_value*100)/100));
+  let tip_final_amount = (Math.round((tip_final/number_of_people)*100)/100);
+  tip_amount.innerHTML = `$ ${tip_final_amount}`;
+
+
+  let amount_final =  Math.round((amount/number_of_people)*100)/100+tip_final_amount;
+
+  let amount_final_ = Math.round(amount_final * 100)/100;
+
+  total_amount.innerHTML = `$ ${amount_final_}`; 
+}
+
+function calculation(tip){
+  let amount = parseFloat(bill.value);
+
+  let tip_value =  ((tip/100)*amount);
+  let number_of_people = parseInt(people.value);
+
+
+  let tip_final = ((Math.round(tip_value*100)/100));
+  let tip_final_amount = (Math.round((tip_final/number_of_people)*100)/100);
+  tip_amount.innerHTML = `$ ${tip_final_amount}`;
+
+
+  let amount_final =  Math.round((amount/number_of_people)*100)/100+tip_final_amount;
+
+  let amount_final_ = Math.round(amount_final * 100)/100;
+
+  total_amount.innerHTML = `$ ${amount_final_}`; 
+}
 
 
 
