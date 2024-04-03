@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Epilogue:ital,wght@0,100..900;1,100..900&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Rubik:ital,wght@0,300..900;1,300..900&family=Space+Grotesk:wght@300..700&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+    rel="stylesheet">
+
+  <title>Frontend Mentor | Tip calculator app</title>
+
+  <style>
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <img src="images/logo.svg" alt="" srcset="">
+    <div class="dashboard">
+      <div class="left">
+        <div class="bill relative">
+          <p class="base">Bill</p>
+          <input type="number" class="input" placeholder="0" onkeydown="return event.keyCode !== 69" id="bill-amount">
+          <img src="images/icon-dollar.svg" alt="" srcset="" class="icon">
+        </div>
+        <div class="select-tip">
+          <p class="base">Select Tip %</p>
+          <div class="range">
+            <button value="5" class="one button" id="five-per">5%</button>
+            <button value="10" class="two button" id="ten-per">10%</button>
+            <button value="15" class="three button" id="fifteen-per">15%</button>
+            <button value="25" class="four button" id="twenty-five-per">25%</button>
+            <button value="50" class="five button" id="fifty-per">50%</button>
+            <input type="number" placeholder="Custom" class="custom" onkeydown="return event.keyCode !== 69"
+              id="custom-per">
+          </div>
+        </div>
+        <div class="number-of-people relative">
+          <p class="base">Number of People</p>
+          <input type="number" placeholder="0" class="input" onkeydown="return event.keyCode !== 69" id="people-number">
+          <img src="images/icon-person.svg" alt="" srcset="" class="icon">
+          <p id='error-one' class="alert">Can't be zero</p>
+          <p id='error-two' class="alert">Something is Wrong</p>
+        </div>
+      </div>
+      <div class="right">
+        <div class="right-container">
+          <div class="per-person">
+            <div class="tip-per-person">
+              <p class="pp-head">Tip Amount</p>
+              <p class="pp-info">/ person</p>
+            </div>
+            <p class="pp-amount" id="tip-amount">$ 0.00</p>
+          </div>
+
+          <div class="per-person">
+            <div class="amount-per-person">
+              <p class="pp-head">Total</p>
+              <p class="pp-info">/ person</p>
+            </div>
+            <p class="pp-amount" id="total-amount">$ 0.00</p>
+          </div>
+        </div>
+
+        <button class="reset-button" id="reset-but">RESET</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="attribution">
+    Coded by <a href="#">Gautam</a>.
+  </div>
+  <script src="script.js"></script>
+</body>
+
+</html>

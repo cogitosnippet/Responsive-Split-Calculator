@@ -1,0 +1,244 @@
+:root{
+  --Strong_cyan: hsl(172, 67%, 45%);
+  --Very_dark_cyan: hsl(183, 100%, 15%);
+  --Dark_grayish_cyan: hsl(186, 14%, 43%);
+  --Grayish_cyan: hsl(184, 14%, 56%);
+  --Light_grayish_cyan: hsl(185, 41%, 84%);
+  --Very_light_grayish_cyan: hsl(189, 41%, 97%);
+  --White: hsl(0, 0%, 100%);
+}
+
+body{
+  font-family: Space Mono;
+  background-color: var(--Light_grayish_cyan);
+}
+.container{
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 80px;
+  margin-top: 50px;
+}
+.dashboard{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--White);
+  gap: 50px;
+  padding: 30px 35px 30px 35px;
+  border-radius: 20px;
+}
+.left{
+  height: auto;
+  width: 17rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 35px;
+}
+.right{
+  width: 20rem;
+  height: 20rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: var(--Very_dark_cyan);
+  padding: 30px 35px 30px 35px;
+  border-radius: 15px;
+}
+.range{
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  grid-template-rows: repeat(2,fr);
+  grid-template-areas: 'one two three'
+                       'four five custom';
+  row-gap: 10px;
+  column-gap: 10px;
+}
+.one{
+  grid-area: one;
+}
+.two{
+  grid-area: two;
+}
+.three{
+  grid-area: three;
+  
+}
+.four{
+  grid-area: four;
+
+}
+.five{
+  grid-area: five;
+}
+.custom{
+  grid-area: custom;
+  width: 4.5rem;
+  background-color: hsla(185, 41%, 84%, 0.25);
+  color: var(--Very_dark_cyan);
+  font-size: 15px;
+  font-weight: 700;
+  border: none;
+  text-align: center;
+  border-radius: 5px;
+  transition: 0.1s;
+}
+.custom:hover{
+  border: 2px solid var(--Strong_cyan);
+  cursor: pointer;
+}
+.button{
+  width: 5rem;
+  padding: 10px 0px 10px 0px;
+  background-color: var(--Very_dark_cyan);
+  color: var(--White);
+  font-weight: 700;
+  font-family: Space Mono;
+  border: none;
+  font-size: 15px;
+  transition: 0.1s;
+  border-radius: 5px;
+}
+button:hover{
+  cursor: pointer;
+  background-color: var(--Strong_cyan);
+}
+.per-person{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.base{
+  margin: 4px 0px 4px 0px;
+  padding: 0;
+  color: var(--Dark_grayish_cyan);
+  font-weight: 700;
+  font-size: 14px;
+}
+.input{
+  width: 15rem;
+  padding: 10px;
+  font-size: 15px;
+  font-weight: 700;
+  background-color: hsla(185, 41%, 84%, 0.25);
+  color: var(--Very_dark_cyan);
+  border: none;
+  border-radius: 5px;
+  font-family: Space Mono;
+  text-align: right;
+  transition: 0.1s;
+}
+.input:hover{
+  border: 2px solid var(--Strong_cyan);
+  cursor: pointer;
+}
+.pp-head{
+  color: var(--White);
+  font-size: 14px;
+  margin: 0px 0px 0px 0px;
+}
+.pp-info{
+  color: var(--Grayish_cyan);
+  font-size: 10px;
+  margin: 0;
+}
+.pp-amount{
+  color: var(--Strong_cyan);
+  font-weight: 700;
+  font-size: 40px;
+  margin: 0;
+}
+.right-container{
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.reset-button{
+  padding: 12px;
+  font-family: monospace;
+  background-color: var(--Grayish_cyan);
+  border: none;
+  opacity: 0.5;
+  font-size: 16px;
+  font-weight: 700;
+  border-radius: 10px;
+  color: var(--White);
+  transition: 0.1s;
+}
+.reset-button:hover{
+  background-color: var(--Strong_cyan);
+  color: var(--Very_dark_cyan);
+  opacity: 1;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button{
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.icon{
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  margin: 10px 10px 12px 10px;
+}
+.relative{
+  position: relative;
+}
+.alert{
+  position: absolute;
+  top: 0;
+  right: 0;
+  font-size: 10px;
+  color: red;
+  display: none;
+}
+
+@media (max-width: 600px){
+  .container{
+    height: auto;
+    margin-bottom: 50px;
+    justify-content: center;
+    align-items: center;
+  }
+  .dashboard{
+    display: flex;
+    flex-direction: column;
+    width: 19rem;
+    padding: 10px 10px 10px 10px;
+  }
+  .left{
+    width: 15rem;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+  .right{
+    width: 15rem;
+    height: 10rem;
+    padding: 10px;
+  }
+  .range{
+    grid-template-columns: repeat(2,fr);
+    grid-template-rows: repeat(3,fr);
+    grid-template-areas: 'one two'
+                        'three four'
+                        'five custom';
+    width: 15rem;
+    column-gap: 50px;
+  }
+  .button{
+    width: 6rem;
+  }
+  .custom{
+    width: 5.5rem;
+  }
+  .pp-amount{
+    font-size: 20px;
+  }
+}
