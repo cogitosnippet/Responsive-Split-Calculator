@@ -124,3 +124,11 @@ function calculation(tip){
 
   total_amount.innerHTML = `$ ${amount_final_}`; 
 }
+
+
+
+
+
+
+
+

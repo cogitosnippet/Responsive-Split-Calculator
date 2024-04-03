@@ -9,53 +9,26 @@
 }
 
 body{
-  font-family: Space Mono;
-  background-color: var(--Light_grayish_cyan);
+  font-family: Space Mono; background-color: var(--Light_grayish_cyan);
 }
 .container{
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: center;
-  gap: 80px;
-  margin-top: 50px;
+  height: 100vh; display: flex; flex-direction: column; justify-content: flex-start; align-items: center;gap: 80px; margin-top: 50px;
 }
 .dashboard{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: var(--White);
-  gap: 50px;
-  padding: 30px 35px 30px 35px;
-  border-radius: 20px;
+  display: flex; justify-content: center; align-items: center; background-color: var(--White); gap: 50px;
+  padding: 30px 35px 30px 35px; border-radius: 20px;
 }
 .left{
-  height: auto;
-  width: 17rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  gap: 35px;
+  height: auto; width: 17rem; display: flex; flex-direction: column; justify-content: space-between; gap: 35px;
 }
 .right{
-  width: 20rem;
-  height: 20rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  background-color: var(--Very_dark_cyan);
-  padding: 30px 35px 30px 35px;
-  border-radius: 15px;
+  width: 20rem; height: 20rem; display: flex; flex-direction: column; justify-content: space-between;background-color: var(--Very_dark_cyan); padding: 30px 35px 30px 35px; border-radius: 15px;
 }
 .range{
-  display: grid;
-  grid-template-columns: repeat(3,1fr);
-  grid-template-rows: repeat(2,fr);
+  display: grid; grid-template-columns: repeat(3,1fr); grid-template-rows: repeat(2,fr);
   grid-template-areas: 'one two three'
                        'four five custom';
-  row-gap: 10px;
-  column-gap: 10px;
+  row-gap: 10px; column-gap: 10px;
 }
 .one{
   grid-area: one;
@@ -75,32 +48,13 @@ body{
   grid-area: five;
 }
 .custom{
-  grid-area: custom;
-  width: 4.5rem;
-  background-color: hsla(185, 41%, 84%, 0.25);
-  color: var(--Very_dark_cyan);
-  font-size: 15px;
-  font-weight: 700;
-  border: none;
-  text-align: center;
-  border-radius: 5px;
-  transition: 0.1s;
+  grid-area: custom; width: 4.5rem; background-color: hsla(185, 41%, 84%, 0.25); color: var(--Very_dark_cyan); font-size: 15px; font-weight: 700; border: none; text-align: center; border-radius: 5px; transition: 0.1s;
 }
 .custom:hover{
-  border: 2px solid var(--Strong_cyan);
-  cursor: pointer;
+  border: 2px solid var(--Strong_cyan); cursor: pointer;
 }
 .button{
-  width: 5rem;
-  padding: 10px 0px 10px 0px;
-  background-color: var(--Very_dark_cyan);
-  color: var(--White);
-  font-weight: 700;
-  font-family: Space Mono;
-  border: none;
-  font-size: 15px;
-  transition: 0.1s;
-  border-radius: 5px;
+  width: 5rem; padding: 10px 0px 10px 0px; background-color: var(--Very_dark_cyan); color: var(--White);font-weight: 700; font-family: Space Mono; border: none; font-size: 15px; transition: 0.1s; border-radius: 5px;
 }
 button:hover{
   cursor: pointer;
